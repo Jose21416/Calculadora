@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora Feliz</title>
+  <title>Calculadora</title>
+  <link rel="icon" href="./img/matematicas.png" type="image/x-icon"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
@@ -12,12 +13,8 @@
 <body>
   <main class="py-5">
     <div class="container">
-      <h1 class="text-primary text-center">Calculadora Feliz</h1>
+      <h1 class="text-center" style="color: white;">Calculadora</h1>
       <form name="happyForm">
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="number1" placeholder="Número 1" required>
-          <label for="number1">Número a</label>
-        </div>
         <div class="form-floating mb-3">
           <select class="form-select" id="operator" aria-label="Operador" required>
             <option selected>Seleccionar operación</option>
@@ -25,14 +22,18 @@
             <option value="-">Resta (a - b)</option>
             <option value="*">Multiplicación (a * b)</option>
             <option value="/">División (a / b)</option>
-            <option value="**">Potencia (a)²</option>
-            <option value="√">Raíz cuadrada(√)</option>
+            <option value="**">Potencia: "A" es la base y "B" es el índice o exponente.­</option>
+            <option value="raiz">Raíz: "A" es la base y "B" es el índice de la raíz.</option>
           </select>
           <label for="operator">Operador</label>
         </div>
         <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="number1" placeholder="Número 1" required>
+          <label for="number1">Número "A"</label>
+        </div>
+        <div class="form-floating mb-3">
           <input type="number" class="form-control" id="number2" placeholder="Número 2" required>
-          <label for="number2">Número b</label>
+          <label for="number2">Número "B"</label>
         </div>
         <button type="submit" class="btn btn-primary btn-lg w-100">Calcular</button>
       </form>

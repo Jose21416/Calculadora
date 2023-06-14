@@ -24,7 +24,7 @@ switch (operator)
   case '**':
     value = number1 ** number2;
     break;
-  case '**':
+  case 'raiz':
     value = number1 ** (1/number2);
     break;
     default:
